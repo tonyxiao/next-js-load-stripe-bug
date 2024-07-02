@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@stripe/connect-js':
+    specifier: ^3.3.7
+    version: 3.3.7
+  '@stripe/react-connect-js':
+    specifier: ^3.3.9
+    version: 3.3.9(@stripe/connect-js@3.3.7)(react-dom@18.3.1)(react@18.3.1)
   next:
     specifier: 14.2.4
     version: 14.2.4(react-dom@18.3.1)(react@18.3.1)
@@ -271,6 +277,22 @@ packages:
   /@rushstack/eslint-patch@1.10.3:
     resolution: {integrity: sha512-qC/xYId4NMebE6w/V33Fh9gWxLgURiNYgVNObbJl2LZv0GUUItCcCqC5axQSwRaAgaxl2mELq1rMzlswaQ0Zxg==}
     dev: true
+
+  /@stripe/connect-js@3.3.7:
+    resolution: {integrity: sha512-3fCQ4pKdZcSaLKQR0x2wTY3ZIpZKzejG88of+6jqVIRElZkojQFLB5GjgpbnwICK9FQEe8aUcgigExwZYqa1PA==}
+    dev: false
+
+  /@stripe/react-connect-js@3.3.9(@stripe/connect-js@3.3.7)(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-oJkDNNNbajFU1Xz91LKFxT2cxQWG4xxIah3kM6AeGMFK5LokN/X1xRM7vMGd0EYJ/htxR9Ji5Y8XHQ+j+B66mQ==}
+    peerDependencies:
+      '@stripe/connect-js': '>=3.3.5'
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@stripe/connect-js': 3.3.7
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    dev: false
 
   /@swc/counter@0.1.3:
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
